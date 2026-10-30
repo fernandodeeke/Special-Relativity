@@ -1,63 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Special Relativity — Course Notes</title>
+<title>Special Relativity · Relatividade Especial</title>
 <meta name="author" content="Fernando Deeke Sasse">
+<meta name="description" content="Lecture notes for a course on special relativity — Notas de aula de um curso de relatividade especial.">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
   :root { --bg:#ffffff; --fg:#1b1b1b; --muted:#5c5c5c; --rule:#d9d9d9; --accent:#9b1c31; color-scheme: light; }
   @media (prefers-color-scheme: dark) {
     :root { --bg:#161616; --fg:#e4e4e2; --muted:#a2a2a0; --rule:#3a3a3a; --accent:#e0788a; color-scheme: dark; }
   }
+  * { box-sizing: border-box; }
   body { margin:0; background:var(--bg); color:var(--fg);
-         font-family:"Source Serif 4", Georgia, serif; font-size:1.12rem; line-height:1.65; }
-  main { max-width:46rem; margin:0 auto; padding:3rem 16px 4rem; }
-  h1 { font-weight:400; color:var(--accent); font-size:2rem; margin:0 0 .3rem; }
+         font-family:"Source Serif 4", Georgia, serif; font-size:1.12rem; line-height:1.6; }
+  main { max-width:52rem; margin:0 auto; padding:3rem 16px 4rem; }
+  h1 { font-weight:400; color:var(--accent); font-size:2rem; margin:0 0 .2rem; line-height:1.25; }
+  h1 .alt { color:var(--muted); }
   .by { color:var(--muted); margin:0 0 2.5rem; }
-  h2 { font-size:1.25rem; font-weight:600; border-bottom:1px solid var(--rule); padding-bottom:.3rem; margin-top:2.5rem; }
-  ul { list-style:none; padding:0; }
-  li { margin:.9rem 0; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; }
+  @media (max-width:640px) { .cols { grid-template-columns:1fr; gap:1rem; } }
+  h2 { font-size:1.2rem; font-weight:600; border-bottom:1px solid var(--rule); padding-bottom:.3rem; margin:0 0 .4rem; }
+  h3 { font-size:1rem; font-weight:600; color:var(--muted); margin:1.4rem 0 .3rem; }
+  ul { list-style:none; padding:0; margin:0; }
+  li { margin:.4rem 0 .9rem; }
   a { color:var(--accent); text-underline-offset:2px; }
   .note { color:var(--muted); font-size:.95rem; display:block; }
-  footer { margin-top:3rem; color:var(--muted); font-size:.85rem; }
+  .fmt { font-size:.9rem; color:var(--muted); }
+  footer { margin-top:3rem; border-top:1px solid var(--rule); padding-top:.8rem; color:var(--muted); font-size:.85rem; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Special Relativity</h1>
-  <p class="by">Fernando Deeke Sasse · Department of Mathematics, UDESC</p>
+  <h1>Special Relativity <span class="alt">· Relatividade Especial</span></h1>
+  <p class="by">Fernando Deeke Sasse · Departamento de Matemática, UDESC</p>
 
-  <h2>Lecture notes</h2>
-  <ul>
-    <li>
-      <a href="SR_Module1_Introduction.html">Module 1: Introduction</a>
-      <span class="note">Modern physics, common sense, and the place of special relativity</span>
-    </li>
-    <!-- Add later modules here, e.g.
-    <li>
-      <a href="SR_Module2_Galilean_Relativity.html">Module 2: …</a>
-      <span class="note">…</span>
-    </li>
-    -->
-  </ul>
+  <div class="cols">
+    <section lang="pt-BR">
+      <h2>Português</h2>
+      <h3>Notas de aula</h3>
+      <ul>
+        <li>
+          <a href="SR_Modulo1_Introducao.html">Módulo 1: Introdução</a>
+          <span class="note">Física moderna, senso comum e o lugar da relatividade especial</span>
+          <span class="fmt">Também em <a href="SR_Modulo1_Introducao.pdf">PDF</a></span>
+        </li>
+        <!-- Próximos módulos, por exemplo:
+        <li>
+          <a href="SR_Modulo2_….html">Módulo 2: …</a>
+          <span class="note">…</span>
+          <span class="fmt">Também em <a href="SR_Modulo2_….pdf">PDF</a></span>
+        </li>
+        -->
+      </ul>
+    </section>
 
-  <h2>PDF</h2>
-  <ul>
-    <li>
-      <a href="SR_Module1_Introduction.pdf">Module 1: Introduction (PDF)</a>
-      <span class="note">Printable version of the Module 1 notes</span>
-    </li>
-    <!-- Add later module PDFs here, e.g.
-    <li>
-      <a href="SR_Module2_….pdf">Module 2: … (PDF)</a>
-      <span class="note">…</span>
-    </li>
-    -->
-  </ul>
+    <section lang="en">
+      <h2>English</h2>
+      <h3>Lecture notes</h3>
+      <ul>
+        <li>
+          <a href="SR_Module1_Introduction.html">Module 1: Introduction</a>
+          <span class="note">Modern physics, common sense, and the place of special relativity</span>
+          <span class="fmt">Also as <a href="SR_Module1_Introduction.pdf">PDF</a></span>
+        </li>
+        <!-- Later modules, e.g.
+        <li>
+          <a href="SR_Module2_….html">Module 2: …</a>
+          <span class="note">…</span>
+          <span class="fmt">Also as <a href="SR_Module2_….pdf">PDF</a></span>
+        </li>
+        -->
+      </ul>
+    </section>
+  </div>
 
-  <footer>Licensed under GPL-3.0.</footer>
+  <footer>Licença GPL-3.0 · Licensed under GPL-3.0</footer>
 </main>
 </body>
 </html>
